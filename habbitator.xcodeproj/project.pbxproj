@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2E03E932F35F12B0007243B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E03E882F35F12B0007243B /* Assets.xcassets */; };
+		F2E03E952F35F12B0007243B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E03E8C2F35F12B0007243B /* LaunchScreen.storyboard */; };
+		F2E03E972F35F12B0007243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03E872F35F12B0007243B /* AppDelegate.swift */; };
+		F2E03E982F35F12B0007243B /* habbitator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2E03E892F35F12B0007243B /* habbitator.xcdatamodeld */; };
+		A20000000000000000000001 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* Habit.swift */; };
+		A20000000000000000000002 /* DailyRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* DailyRecord.swift */; };
+		A20000000000000000000003 /* HabitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* HabitRepository.swift */; };
+		A20000000000000000000004 /* CoreDataHabitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* CoreDataHabitRepository.swift */; };
+		A20000000000000000000005 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* RootViewModel.swift */; };
+		A20000000000000000000006 /* SetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000006 /* SetupViewModel.swift */; };
+		A20000000000000000000007 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000007 /* TodayViewModel.swift */; };
+		A20000000000000000000008 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* CalendarViewModel.swift */; };
+		A20000000000000000000009 /* DayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000009 /* DayDetailViewModel.swift */; };
+		A2000000000000000000000A /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000000A /* ProgressViewModel.swift */; };
+		F2E03EA12F35F12B0007243B /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EA22F35F12B0007243B /* AppTheme.swift */; };
+		F2E03EA32F35F12B0007243B /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EA42F35F12B0007243B /* UserDefaultsKeys.swift */; };
+		F2E03EA52F35F12B0007243B /* HabitEntity+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EA62F35F12B0007243B /* HabitEntity+CoreData.swift */; };
+		F2E03EA72F35F12B0007243B /* DailyRecordEntity+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EA82F35F12B0007243B /* DailyRecordEntity+CoreData.swift */; };
+		F2E03EA92F35F12B0007243B /* HabitCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EAA2F35F12B0007243B /* HabitCoreDataStack.swift */; };
+		F2E03EAB2F35F12B0007243B /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EAC2F35F12B0007243B /* ReminderManager.swift */; };
+		F2E03EAF2F35F12B0007243B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EB02F35F12B0007243B /* RootViewController.swift */; };
+		F2E03EB12F35F12B0007243B /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EB22F35F12B0007243B /* SetupViewController.swift */; };
+		F2E03EB32F35F12B0007243B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EB42F35F12B0007243B /* TodayViewController.swift */; };
+		F2E03EB52F35F12B0007243B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EB62F35F12B0007243B /* CalendarViewController.swift */; };
+		F2E03EB72F35F12B0007243B /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EB82F35F12B0007243B /* ProgressViewController.swift */; };
+		F2E03EB92F35F12B0007243B /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EBA2F35F12B0007243B /* CustomTabBarView.swift */; };
+		F2E03EBB2F35F12B0007243B /* DayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EBC2F35F12B0007243B /* DayDetailViewController.swift */; };
+		F2E03EBD2F35F12B0007243B /* ThemedPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EBE2F35F12B0007243B /* ThemedPopupViewController.swift */; };
+		F2E03EBF2F35F12B0007243B /* NewDayChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EC02F35F12B0007243B /* NewDayChoiceViewController.swift */; };
+		F2E03EC12F35F12B0007243B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E03EC22F35F12B0007243B /* InfoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F2E03E6C2F35F1230007243B /* habbitator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habbitator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E03E872F35F12B0007243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2E03E882F35F12B0007243B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2E03E8A2F35F12B0007243B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E03E8B2F35F12B0007243B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A10000000000000000000001 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		A10000000000000000000002 /* DailyRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecord.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 /* HabitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRepository.swift; sourceTree = "<group>"; };
+		A10000000000000000000004 /* CoreDataHabitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHabitRepository.swift; sourceTree = "<group>"; };
+		A10000000000000000000005 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000006 /* SetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000007 /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000008 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000009 /* DayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailViewModel.swift; sourceTree = "<group>"; };
+		A1000000000000000000000A /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
+		F2E03E922F35F12B0007243B /* habbitator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = habbitator.xcdatamodel; sourceTree = "<group>"; };
+		F2E03EA22F35F12B0007243B /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		F2E03EA42F35F12B0007243B /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		F2E03EA62F35F12B0007243B /* HabitEntity+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitEntity+CoreData.swift"; sourceTree = "<group>"; };
+		F2E03EA82F35F12B0007243B /* DailyRecordEntity+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyRecordEntity+CoreData.swift"; sourceTree = "<group>"; };
+		F2E03EAA2F35F12B0007243B /* HabitCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCoreDataStack.swift; sourceTree = "<group>"; };
+		F2E03EAC2F35F12B0007243B /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		F2E03EB02F35F12B0007243B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F2E03EB22F35F12B0007243B /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		F2E03EB42F35F12B0007243B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F2E03EB62F35F12B0007243B /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		F2E03EB82F35F12B0007243B /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		F2E03EBA2F35F12B0007243B /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		F2E03EBC2F35F12B0007243B /* DayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailViewController.swift; sourceTree = "<group>"; };
+		F2E03EBE2F35F12B0007243B /* ThemedPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemedPopupViewController.swift; sourceTree = "<group>"; };
+		F2E03EC02F35F12B0007243B /* NewDayChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayChoiceViewController.swift; sourceTree = "<group>"; };
+		F2E03EC22F35F12B0007243B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2E03E692F35F1230007243B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2E03E632F35F1230007243B = {
+			isa = PBXGroup;
+			children = (
+				F2E03E912F35F12B0007243B /* habbitator */,
+				F2E03E6D2F35F1230007243B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2E03E6D2F35F1230007243B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03E6C2F35F1230007243B /* habbitator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03E872F35F12B0007243B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000002 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000003 /* Configuration */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000003 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EA42F35F12B0007243B /* UserDefaultsKeys.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000004 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000005 /* Models */,
+				A30000000000000000000006 /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000002 /* DailyRecord.swift */,
+				A10000000000000000000001 /* Habit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000006 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* HabitRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000007 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000008 /* Persistence */,
+				A3000000000000000000000C /* Repositories */,
+				A3000000000000000000000D /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000008 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000009 /* CoreData */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000009 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A3000000000000000000000A /* Entities */,
+				F2E03EAA2F35F12B0007243B /* HabitCoreDataStack.swift */,
+				A3000000000000000000000B /* Model */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EA82F35F12B0007243B /* DailyRecordEntity+CoreData.swift */,
+				F2E03EA62F35F12B0007243B /* HabitEntity+CoreData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03E892F35F12B0007243B /* habbitator.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000004 /* CoreDataHabitRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EAC2F35F12B0007243B /* ReminderManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000010 /* Common */,
+				A3000000000000000000000F /* DesignSystem */,
+				A30000000000000000000013 /* Features */,
+				A30000000000000000000012 /* Root */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000F /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EA22F35F12B0007243B /* AppTheme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000010 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000011 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000011 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EBA2F35F12B0007243B /* CustomTabBarView.swift */,
+				F2E03EBE2F35F12B0007243B /* ThemedPopupViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000012 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EB02F35F12B0007243B /* RootViewController.swift */,
+				A10000000000000000000005 /* RootViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000013 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000016 /* Calendar */,
+				A30000000000000000000018 /* Info */,
+				A30000000000000000000019 /* NewDayChoice */,
+				A30000000000000000000017 /* Progress */,
+				A30000000000000000000014 /* Setup */,
+				A30000000000000000000015 /* Today */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000014 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EB22F35F12B0007243B /* SetupViewController.swift */,
+				A10000000000000000000006 /* SetupViewModel.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000015 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EB42F35F12B0007243B /* TodayViewController.swift */,
+				A10000000000000000000007 /* TodayViewModel.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000016 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EB62F35F12B0007243B /* CalendarViewController.swift */,
+				A10000000000000000000008 /* CalendarViewModel.swift */,
+				F2E03EBC2F35F12B0007243B /* DayDetailViewController.swift */,
+				A10000000000000000000009 /* DayDetailViewModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000017 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EB82F35F12B0007243B /* ProgressViewController.swift */,
+				A1000000000000000000000A /* ProgressViewModel.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000018 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EC22F35F12B0007243B /* InfoViewController.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000019 /* NewDayChoice */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03EC02F35F12B0007243B /* NewDayChoiceViewController.swift */,
+			);
+			path = NewDayChoice;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000001A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2E03E882F35F12B0007243B /* Assets.xcassets */,
+				F2E03E8A2F35F12B0007243B /* Info.plist */,
+				F2E03E8C2F35F12B0007243B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F2E03E912F35F12B0007243B /* habbitator */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000001 /* App */,
+				A30000000000000000000002 /* Core */,
+				A30000000000000000000007 /* Data */,
+				A30000000000000000000004 /* Domain */,
+				A3000000000000000000000E /* Presentation */,
+				A3000000000000000000001A /* Resources */,
+			);
+			path = habbitator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2E03E6B2F35F1230007243B /* habbitator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E03E822F35F1240007243B /* Build configuration list for PBXNativeTarget "habbitator" */;
+			buildPhases = (
+				F2E03E682F35F1230007243B /* Sources */,
+				F2E03E692F35F1230007243B /* Frameworks */,
+				F2E03E6A2F35F1230007243B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = habbitator;
+			packageProductDependencies = (
+			);
+			productName = habbitator;
+			productReference = F2E03E6C2F35F1230007243B /* habbitator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2E03E642F35F1230007243B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					F2E03E6B2F35F1230007243B = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = F2E03E672F35F1230007243B /* Build configuration list for PBXProject "habbitator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2E03E632F35F1230007243B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F2E03E6D2F35F1230007243B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2E03E6B2F35F1230007243B /* habbitator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2E03E6A2F35F1230007243B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E03E932F35F12B0007243B /* Assets.xcassets in Resources */,
+				F2E03E952F35F12B0007243B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2E03E682F35F1230007243B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E03E972F35F12B0007243B /* AppDelegate.swift in Sources */,
+				A20000000000000000000008 /* CalendarViewModel.swift in Sources */,
+				A20000000000000000000004 /* CoreDataHabitRepository.swift in Sources */,
+				A20000000000000000000002 /* DailyRecord.swift in Sources */,
+				A20000000000000000000009 /* DayDetailViewModel.swift in Sources */,
+				A20000000000000000000001 /* Habit.swift in Sources */,
+				A20000000000000000000003 /* HabitRepository.swift in Sources */,
+				A2000000000000000000000A /* ProgressViewModel.swift in Sources */,
+				A20000000000000000000005 /* RootViewModel.swift in Sources */,
+				A20000000000000000000006 /* SetupViewModel.swift in Sources */,
+				A20000000000000000000007 /* TodayViewModel.swift in Sources */,
+				F2E03EA12F35F12B0007243B /* AppTheme.swift in Sources */,
+				F2E03EB52F35F12B0007243B /* CalendarViewController.swift in Sources */,
+				F2E03EA72F35F12B0007243B /* DailyRecordEntity+CoreData.swift in Sources */,
+				F2E03EA92F35F12B0007243B /* HabitCoreDataStack.swift in Sources */,
+				F2E03EA52F35F12B0007243B /* HabitEntity+CoreData.swift in Sources */,
+				F2E03E982F35F12B0007243B /* habbitator.xcdatamodeld in Sources */,
+				F2E03EB72F35F12B0007243B /* ProgressViewController.swift in Sources */,
+				F2E03EB92F35F12B0007243B /* CustomTabBarView.swift in Sources */,
+				F2E03EBB2F35F12B0007243B /* DayDetailViewController.swift in Sources */,
+				F2E03EAB2F35F12B0007243B /* ReminderManager.swift in Sources */,
+				F2E03EAF2F35F12B0007243B /* RootViewController.swift in Sources */,
+				F2E03EB12F35F12B0007243B /* SetupViewController.swift in Sources */,
+				F2E03EB32F35F12B0007243B /* TodayViewController.swift in Sources */,
+				F2E03EBD2F35F12B0007243B /* ThemedPopupViewController.swift in Sources */,
+				F2E03EBF2F35F12B0007243B /* NewDayChoiceViewController.swift in Sources */,
+				F2E03EC12F35F12B0007243B /* InfoViewController.swift in Sources */,
+				F2E03EA32F35F12B0007243B /* UserDefaultsKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2E03E8C2F35F12B0007243B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E03E8B2F35F12B0007243B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2E03E832F35F1240007243B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = habbitator/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.habbitation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F2E03E842F35F1240007243B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = habbitator/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.habbitation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F2E03E852F35F1240007243B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2E03E862F35F1240007243B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2E03E672F35F1230007243B /* Build configuration list for PBXProject "habbitator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E03E852F35F1240007243B /* Debug */,
+				F2E03E862F35F1240007243B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E03E822F35F1240007243B /* Build configuration list for PBXNativeTarget "habbitator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E03E832F35F1240007243B /* Debug */,
+				F2E03E842F35F1240007243B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F2E03E892F35F12B0007243B /* habbitator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F2E03E922F35F12B0007243B /* habbitator.xcdatamodel */,
+			);
+			currentVersion = F2E03E922F35F12B0007243B /* habbitator.xcdatamodel */;
+			path = habbitator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F2E03E642F35F1230007243B /* Project object */;
+}
