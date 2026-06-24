@@ -1,18 +1,18 @@
 # Habbitator
 
-Habbitator — iOS-приложение для формирования полезных привычек. Пользователь выбирает три привычки на день, отмечает их выполнение и наблюдает за прогрессом.
+Habbitator is an iOS app for building healthy habits. Users choose three habits for the day, mark them as completed, and track their progress.
 
-## Возможности
+## Features
 
-- создание трёх ежедневных привычек;
-- замена или сохранение текущих привычек в начале нового дня;
-- отметка выполненных задач;
-- календарь с историей выполнения;
-- статистика и серии успешных дней;
-- несколько цветовых тем;
-- локальное хранение данных через Core Data.
+- Create three daily habits;
+- replace or keep the current habits at the start of a new day;
+- mark tasks as completed;
+- view completion history in a calendar;
+- track statistics and successful-day streaks;
+- choose from multiple color themes;
+- store data locally with Core Data.
 
-## Технологии
+## Technologies
 
 - Swift 5;
 - UIKit;
@@ -22,30 +22,30 @@ Habbitator — iOS-приложение для формирования поле
 - iOS 14.0+;
 - Clean Architecture + MVVM.
 
-## Архитектура
+## Architecture
 
-Проект разделён на независимые слои:
+The project is divided into independent layers:
 
 ```text
 habbitator/
-├── App/                     # Точка входа и сборка зависимостей
-├── Core/                    # Общая конфигурация
-├── Domain/                  # Модели и протоколы репозиториев
+├── App/                     # Entry point and dependency assembly
+├── Core/                    # Shared configuration
+├── Domain/                  # Models and repository protocols
 │   ├── Models/
 │   └── Repositories/
-├── Data/                    # Core Data, сервисы и реализации репозиториев
+├── Data/                    # Core Data, services, and repository implementations
 │   ├── Persistence/
 │   ├── Repositories/
 │   └── Services/
-├── Presentation/            # UIKit-экраны и ViewModel
+├── Presentation/            # UIKit screens and ViewModels
 │   ├── Common/
 │   ├── DesignSystem/
 │   ├── Features/
 │   └── Root/
-└── Resources/               # Assets, LaunchScreen и Info.plist
+└── Resources/               # Assets, LaunchScreen, and Info.plist
 ```
 
-Направление зависимостей:
+Dependency flow:
 
 ```text
 ViewController → ViewModel → HabitRepository
@@ -55,16 +55,16 @@ ViewController → ViewModel → HabitRepository
                              Core Data
 ```
 
-Контроллеры не работают с Core Data напрямую. Они получают подготовленные данные от ViewModel, а ViewModel зависят от доменного протокола `HabitRepository`.
+Controllers do not access Core Data directly. They receive prepared data from ViewModels, while the ViewModels depend on the domain-level `HabitRepository` protocol.
 
-## Запуск
+## Running the App
 
-1. Откройте `habbitator.xcodeproj` в Xcode.
-2. Выберите схему `habbitator`.
-3. Выберите iPhone Simulator или подключённое устройство.
-4. Запустите проект сочетанием `⌘R`.
+1. Open `habbitator.xcodeproj` in Xcode.
+2. Select the `habbitator` scheme.
+3. Choose an iPhone Simulator or a connected device.
+4. Run the project with `⌘R`.
 
-Для сборки из терминала:
+To build from the terminal:
 
 ```bash
 DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
@@ -77,6 +77,6 @@ xcodebuild \
   build
 ```
 
-## Хранение данных
+## Data Storage
 
-Привычки и ежедневные отметки сохраняются локально в Core Data. При обновлении архитектуры формат существующего хранилища и пользовательская механика не изменялись.
+Habits and daily completion records are stored locally in Core Data. The architecture update did not change the existing persistent store format or user-facing behavior.
